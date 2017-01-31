@@ -98,6 +98,9 @@ config HAVE_KERNEL_XZ
 config HAVE_KERNEL_LZO
 	bool
 
+config HAVE_KERNEL_CCACHE
+	bool
+
 choice
 	prompt "Kernel compression mode"
 	default KERNEL_GZIP
@@ -167,6 +170,12 @@ config KERNEL_LZO
 	  Its compression ratio is the poorest among the choices. The kernel
 	  size is about 10% bigger than gzip; however its speed
 	  (both compression and decompression) is the fastest.
+
+config CONFIG_WITH_CCACHE
+	bool "CCACHE"
+	depends on HAVE_KERNEL_CCACHE
+	help
+	  This will enable ccache while compiling. you will have a faster build.
 
 endchoice
 

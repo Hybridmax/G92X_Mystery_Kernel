@@ -82,7 +82,9 @@ if [ ! -e $KERNELDIR/output/$TARGET ]; then
 fi
 
 # system compiler
-export CROSS_COMPILE=/home/hybridmax/android/toolchains/arm64/uber-aarch64_4.9/bin/aarch64-linux-android-
+#export CROSS_COMPILE=/home/hybridmax/android/toolchains/arm64/uber-aarch64_4.9/bin/aarch64-linux-android-
+
+export CROSS_COMPILE=/home/hybridmax/android/toolchains/arm64/linaro-aarch64_6.3.0/bin/aarch64-cortex_a53-linux-gnueabi-
 
 
 

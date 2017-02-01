@@ -74,6 +74,12 @@ if [ "$TARGET" = "G925F" ] ; then
 	export KERNEL_CONFIG="hybridmax-zerolte_defconfig";
 fi;
 
+# check if output directory exists
+if [ ! -e $KERNELDIR/output/$TARGET ]; then
+	echo "creating output directory"
+	mkdir -p $KERNELDIR/output/$TARGET
+	
+fi
 
 # system compiler
 export CROSS_COMPILE=/home/hybridmax/android/toolchains/arm64/uber-aarch64_4.9/bin/aarch64-linux-android-

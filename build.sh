@@ -21,7 +21,7 @@ export DEVELOPER="Mystery"
 export HYBRIDVER="$DEVELOPER-Kernel-$TARGET-$VERSION-($CURDATE)"
 export VERSION="Beta1"
 export KERNEL_NAME="$HYBRIDVER"
-export LOCALVERSION="$DEVELOPER-S6-$VERSION"
+export LOCALVERSION="-$DEVELOPER-S6-$VERSION"
 
 #################################### SETUP ####################################
 
